@@ -8,7 +8,7 @@ def validateExpresion(expression):
     if expression == "":
         raise ValueError("Empty Function")
     
-    toMatch = "(-)?(\d+$)|((\d+[+-])?(\d+[\*\/])?[xX](\^\d+)?([+-]\d+([\*\/][xX](\^\d+)?)?)*)*$"
+    toMatch = "(-)?(\d+$)|((-)?(\d+[+-])?(\d+[\*\/])?[xX](\^\d+)?([+-](\d+)?([\*\/][xX](\^\d+)?)?)*)*$"
     matched = re.match(toMatch, expression)
     if not matched:
         raise ValueError("Invalid Expression")
