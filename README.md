@@ -17,7 +17,7 @@ This is a GUI application to plot 2D functions in the form Y = F(X)
 
 1. **Navigate to source**
     ```
-    cd source
+    $ cd source
     ```
 
 2. **Running application**
@@ -27,7 +27,7 @@ This is a GUI application to plot 2D functions in the form Y = F(X)
 
 3. **Running tests**
     ```
-    python -m pytest
+    $ python -m pytest
     ```
 ---
 ## **Snapshots**
