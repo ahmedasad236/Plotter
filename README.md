@@ -31,7 +31,7 @@ This is a GUI application to plot 2D functions in the form Y = F(X)
     ```
 ---
 ## **Snapshots**
-![img1](.\snapshots\empty_func.png)
-![img2](.\snapshots\invalid.png)
-![img3](.\snapshots\min_max.png)
-![img1](.\snapshots\right_func.png)
+![img1](./snapshots/empty_func.png)
+![img2](./snapshots/invalid.png)
+![img3](./snapshots/min_max.png)
+![img1](./snapshots/right_func.png)
