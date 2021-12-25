@@ -1,6 +1,6 @@
 # Plotter
 ```
-This is a GUI application to plot 2D functions in the form Y = F(X)
+This is a GUI application to plot functions in the form Y = F(X)
 ```
 ---
 ## **Technologies**
