@@ -1,17 +1,16 @@
 import matplotlib.pyplot as plt 
 import numpy as np
-from Validation import Validation
+import Validation as valid
 import re
 import sys
 
 class Plot:
     def __init__(self, exp, minVal, maxVal):
-        self.validate = Validation()
-        self.expression = self.validate.validateExpresion(exp)
+        self.expression = valid.validateExpresion(exp)
         print(self.expression)
-        self.minValue = self.validate.validateInteger(minVal)
-        self.maxValue = self.validate.validateInteger(maxVal)
-        self.validate.validateMaxMinValues(self.minValue, self.maxValue)
+        self.minValue = valid.validateInteger(minVal)
+        self.maxValue = valid.validateInteger(maxVal)
+        valid.validateMaxMinValues(self.minValue, self.maxValue)
 #-------------------------------------------------------------------------------------    
     def F(self, x):
         val = eval(self.expression)
@@ -20,7 +19,7 @@ class Plot:
     def generateFunction(self):
         xList = []
         yList = []
-        testZeroDiv = self.validate.validateDivisionByZero(self.expression, self.minValue)
+        testZeroDiv = valid.validateDivisionByZero(self.expression, self.minValue, self.maxValue)
         for i in range(self.minValue, self.maxValue):
             xList.append(i)
             if testZeroDiv == False and i == 0: #put the y-value with infinity if(x is a denominator and x == 0)
